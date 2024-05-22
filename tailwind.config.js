@@ -14,6 +14,9 @@ module.exports = {
     ],
     theme: {
         extend: {},
+        colors: {
+            mainBackgroundColor: "#F4F8FF",
+        },
     },
     plugins: [require("flowbite/plugin")],
 };

@@ -15,7 +15,7 @@ import Image from "next/image";
 function Banner() {
     return (
         <Swiper
-            className="mySwiper h-96 mx-auto"
+            className="mySwiper h-[620px] w-full mx-auto"
             spaceBetween={30}
             centeredSlides={true}
             autoplay={{
@@ -28,30 +28,30 @@ function Banner() {
             navigation={false} // true
             modules={[Autoplay, Pagination, Navigation]}
         >
-            <SwiperSlide className="h-96">
+            <SwiperSlide>
                 <Image
                     src="https://cdn.sanity.io/images/s37229yn/production/21f0f7ab2777513b48be97e55f00052c3bee6b9d-6400x3104.png?w=1920&auto=format"
                     width={6400} // Native image width
                     height={3104} // Native image height
-                    className="h-auto w-auto"
+                    className="h-auto w-auto bg-auto"
                     alt="Flowbite Logo"
                 />
             </SwiperSlide>
-            <SwiperSlide className="h-96">
+            <SwiperSlide>
                 <Image
                     src="https://cdn.sanity.io/images/s37229yn/production/21f0f7ab2777513b48be97e55f00052c3bee6b9d-6400x3104.png?w=1920&auto=format"
                     width={6400} // Native image width
                     height={3104} // Native image height
-                    className="h-auto w-auto"
+                    className="h-auto w-auto bg-cover"
                     alt="Flowbite Logo"
                 />
             </SwiperSlide>
-            <SwiperSlide className="h-96">
+            <SwiperSlide>
                 <Image
                     src="https://cdn.sanity.io/images/s37229yn/production/21f0f7ab2777513b48be97e55f00052c3bee6b9d-6400x3104.png?w=1920&auto=format"
                     width={6400} // Native image width
                     height={3104} // Native image height
-                    className="h-auto w-auto"
+                    className="h-auto w-auto bg-contain"
                     alt="Flowbite Logo"
                 />
             </SwiperSlide>
