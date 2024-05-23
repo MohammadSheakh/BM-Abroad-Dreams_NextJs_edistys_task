@@ -3,7 +3,8 @@ import Navbar from "@/component/common/Layout/Navbar";
 
 export default function RootLayout({ children }) {
     return (
-        <html lang="en">
+        <html lang="en" className="bg-mainBackgroundColor">
+            {/* className="bg-mainBackgroundColor" */}
             <Navbar />
             <main>{children}</main>
             <Footer />

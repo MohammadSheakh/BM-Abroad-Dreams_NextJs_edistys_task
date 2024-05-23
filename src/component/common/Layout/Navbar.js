@@ -1,13 +1,30 @@
 // rfce
 import Image from "next/image";
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 function Navbar() {
+    const [isSticky, setIsSticky] = useState(false);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            setIsSticky(window.scrollY > 0);
+        };
+
+        window.addEventListener("scroll", handleScroll);
+
+        return () => {
+            window.removeEventListener("scroll", handleScroll);
+        };
+    }, []);
     return (
         <>
-            <div className=" flex justify-center">
+            <div
+                className={` flex justify-center ${
+                    isSticky ? "mt-0 top-0 z-50" : "mt-3"
+                }`}
+            >
                 {/* flex justify-center */}
-                <nav className="bg-white dark:bg-gray-900 fixed w-[90%] z-20  border-none ">
+                <nav className="bg-white bg-opacity-95 rounded-lg dark:bg-gray-900 fixed w-[90%] z-20  border-none ">
                     <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
                         <a
                             href="https://flowbite.com/"

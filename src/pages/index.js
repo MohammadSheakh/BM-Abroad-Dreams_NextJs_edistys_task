@@ -7,6 +7,7 @@ import Banner from "@/component/home/Banner";
 import AboutUs from "@/component/home/AboutUs";
 import TaskCards from "@/component/home/TaskCards/TaskCards";
 import Video from "@/component/home/Video";
+import TopDestinationCards from "@/component/home/TopDestinationCards/TopDestinationCards";
 
 // import { Alert } from "flowbite-react"; //
 
@@ -38,15 +39,38 @@ export default function Home() {
                 {/* ----------------------------about us section ---------------------start------ */}
                 <AboutUs />
                 {/* ----------------------------about us section ---------------------End------ */}
-
                 {/* ----------------------------Task Cards section ---------------------start------ */}
+
                 <TaskCards />
 
                 {/* ----------------------------Task Cards section ---------------------End------ */}
                 {/* ----------------------------Video section ---------------------start------ */}
-                <VideoPlayer />
-
+                {/* <VideoPlayer /> 🔴*/}
                 {/* ----------------------------Video section ---------------------End------ */}
+                {/* ------------------------------- Top Destination Cards section -------- start ---  */}
+                <div className="flex  mt-0 ">
+                    {/* mx-28  */}
+                    <div className="flex gap-5  mt-10">
+                        {/* mx-28 */}
+                        <div className="w-[900px]">
+                            {/* [900px] */}
+                            <div className="mx-28">
+                                <h1 className=" text-5xl font-bold">
+                                    TOP DESTINATION
+                                </h1>
+                                <h3 className=" text-sm font-light">
+                                    Study in your Dream Destinationd
+                                </h3>
+                            </div>
+
+                            <div>
+                                {" "}
+                                <TopDestinationCards />{" "}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {/* ----------------------------------- Top Destination Cards section --------- End ---- */}
             </div>
         </>
     );
