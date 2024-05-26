@@ -8,6 +8,7 @@ import AboutUs from "@/component/home/AboutUs";
 import TaskCards from "@/component/home/TaskCards/TaskCards";
 import Video from "@/component/home/Video";
 import TopDestinationCards from "@/component/home/TopDestinationCards/TopDestinationCards";
+import TestimonialCarousel from "@/component/home/Testimonials/TestimonialCarousel";
 
 // import { Alert } from "flowbite-react"; //
 
@@ -71,6 +72,31 @@ export default function Home() {
                     </div>
                 </div>
                 {/* ----------------------------------- Top Destination Cards section --------- End ---- */}
+                {/* ----------------------------------- Testimonials section --------- Start ---- */}
+                <div className="flex  mt-0 ">
+                    {/* mx-28  */}
+                    <div className="flex gap-5  mt-10">
+                        {/* mx-28 */}
+                        <div className="w-[900px]">
+                            {/* [900px] */}
+                            <div className="mx-28">
+                                <h1 className=" text-5xl font-bold">
+                                    Testimonials
+                                </h1>
+                                <h3 className=" text-sm font-light">
+                                    Our students shared their visa success
+                                    stories
+                                </h3>
+                            </div>
+
+                            <div>
+                                {" "}
+                                <TestimonialCarousel />{" "}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {/* ----------------------------------- Testimonials section --------- End ---- */}
             </div>
         </>
     );

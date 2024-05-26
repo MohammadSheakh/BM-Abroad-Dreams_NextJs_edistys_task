@@ -5,13 +5,13 @@ import TopDestinationCard from "./TopDestinationCard";
 function TopDestinationCards() {
     const destinationData = [
         {
-            title: "New Zealand",
+            title: "NEW ZEALAND",
             description:
                 "Studying in New Zealand offers a unique blend of high-quality education and breathtaking natural beauty. With its diverse courses, New Zealand provides an enriching experience for international students.",
             image: "https://cdn.sanity.io/images/s37229yn/production/8a927441826e5946a3f7c5a5ec21602728c387f4-2756x4164.jpg?auto=format",
         },
         {
-            title: "Australia",
+            title: "AUSTRALIA",
             description:
                 "Australia is renowned for its world-class education system and a diverse, multicultural society. With a wide range of programs and courses, it provides an enriching experience for international students.",
             image: "https://cdn.sanity.io/images/s37229yn/production/ae9f1d1675c36f23df197fdbcd6ed7eee09baf84-1528x2048.png?auto=format",
