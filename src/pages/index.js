@@ -9,6 +9,7 @@ import TaskCards from "@/component/home/TaskCards/TaskCards";
 import Video from "@/component/home/Video";
 import TopDestinationCards from "@/component/home/TopDestinationCards/TopDestinationCards";
 import TestimonialCarousel from "@/component/home/Testimonials/TestimonialCarousel";
+import StartYourJourney from "@/component/home/StartYourJourney";
 
 // import { Alert } from "flowbite-react"; //
 
@@ -77,7 +78,7 @@ export default function Home() {
                     {/* mx-28  */}
                     <div className="flex gap-5  mt-10">
                         {/* mx-28 */}
-                        <div className="w-[900px]">
+                        <div className="w-[900px] ">
                             {/* [900px] */}
                             <div className="mx-28">
                                 <h1 className=" text-5xl font-bold">
@@ -97,6 +98,9 @@ export default function Home() {
                     </div>
                 </div>
                 {/* ----------------------------------- Testimonials section --------- End ---- */}
+                {/* ------------------------------------- Success Section --------------- Start ----  */}
+                <StartYourJourney />
+                {/* ------------------------------------- Success Section --------------- End ----  */}
             </div>
         </>
     );

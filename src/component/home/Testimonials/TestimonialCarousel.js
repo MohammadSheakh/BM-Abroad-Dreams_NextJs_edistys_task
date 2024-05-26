@@ -39,7 +39,7 @@ function TestimonialCarousel() {
                     <CiCircleChevLeft className="text-4xl opacity-50 text-gray-500" />
                 </button>
 
-                <div className="overflow-hidden flex border ">
+                <div className="overflow-hidden flex border-none bg-white rounded-xl">
                     {/* max-w-lg */}{" "}
                     <div className="embla__viewport" ref={emblaRef}>
                         {" "}
