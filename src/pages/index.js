@@ -10,6 +10,7 @@ import Video from "@/component/home/Video";
 import TopDestinationCards from "@/component/home/TopDestinationCards/TopDestinationCards";
 import TestimonialCarousel from "@/component/home/Testimonials/TestimonialCarousel";
 import StartYourJourney from "@/component/home/StartYourJourney";
+import TitleComponent from "@/component/common/title/TitleComponent";
 
 // import { Alert } from "flowbite-react"; //
 
@@ -52,18 +53,14 @@ export default function Home() {
                 {/* ------------------------------- Top Destination Cards section -------- start ---  */}
                 <div className="flex  mt-0 ">
                     {/* mx-28  */}
-                    <div className="flex gap-5  mt-10">
+                    <div className="flex  gap-5  mt-10">
                         {/* mx-28 */}
                         <div className="w-[900px]">
                             {/* [900px] */}
-                            <div className="mx-28">
-                                <h1 className=" text-5xl font-bold">
-                                    TOP DESTINATION
-                                </h1>
-                                <h3 className=" text-sm font-light">
-                                    Study in your Dream Destinationd
-                                </h3>
-                            </div>
+                            <TitleComponent
+                                title="TOP DESTINATION"
+                                shortDescription="Study in your Dream Destination"
+                            />
 
                             <div>
                                 {" "}
@@ -80,15 +77,12 @@ export default function Home() {
                         {/* mx-28 */}
                         <div className="w-[900px] ">
                             {/* [900px] */}
-                            <div className="mx-28">
-                                <h1 className=" text-5xl font-bold">
-                                    Testimonials
-                                </h1>
-                                <h3 className=" text-sm font-light">
-                                    Our students shared their visa success
-                                    stories
-                                </h3>
-                            </div>
+
+                            <TitleComponent
+                                title="TESTIMONIAL"
+                                shortDescription="Our students shared their visa success
+                                stories"
+                            />
 
                             <div>
                                 {" "}
@@ -101,6 +95,27 @@ export default function Home() {
                 {/* ------------------------------------- Success Section --------------- Start ----  */}
                 <StartYourJourney />
                 {/* ------------------------------------- Success Section --------------- End ----  */}
+                {/* ------------------------------------- Blog Section --------------- Start ----  */}
+                <div className="flex  mt-0 ">
+                    {/* mx-28  */}
+                    <div className="flex gap-5  mt-10">
+                        {/* mx-28 */}
+                        <div className="w-[900px] ">
+                            {/* [900px] */}
+
+                            <TitleComponent
+                                title="BLOGS"
+                                shortDescription="Explore our latest blogs and articles"
+                            />
+
+                            <div>
+                                {" "}
+                                <TestimonialCarousel />{" "}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {/* ------------------------------------- Blog Section --------------- End ----  */}
             </div>
         </>
     );

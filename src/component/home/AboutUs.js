@@ -1,15 +1,21 @@
 import Image from "next/image";
 import React from "react";
 
+import TitleComponent from "../common/title/TitleComponent.js";
+
 function AboutUs() {
     return (
         <div className="flex mx-28 p-14 mt-0 rounded-3xl bg-white">
             <div className="flex gap-5 mx-28 mt-10">
                 <div className="w-[900px]">
-                    <h1 className=" text-5xl font-bold">ABOUT US</h1>
+                    {/* <h1 className=" text-5xl font-bold">ABOUT US</h1>
                     <h3 className=" text-sm font-light">
                         Archive your Dream with BM ABROAD DREAMERS
-                    </h3>
+                    </h3> */}
+                    <TitleComponent
+                        title="ABOUT US"
+                        shortDescription="Archive your Dream with BM ABROAD DREAMERS"
+                    />
                     <h5 className="mt-10 text-left">
                         Embarking on an educational journey in a foreign land is
                         akin to stepping onto a canvas brimming with boundless
