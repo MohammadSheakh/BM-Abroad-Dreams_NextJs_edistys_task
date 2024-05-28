@@ -1,7 +1,14 @@
-import React from "react";
+
+import { useRouter } from "next/router";
+import React, { useEffect } from "react";
 
 function home() {
-    return <div>home</div>;
+    const router = useRouter()
+    // return <div>home</div>;
+    useEffect(() => {
+        router.push('/')
+    },[])
+    
 }
 
 export default home;
