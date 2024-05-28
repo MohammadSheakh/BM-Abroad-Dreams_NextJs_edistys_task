@@ -76,7 +76,7 @@ const Timeline = () => {
           className="bg-blue-500 h-full transition-all duration-300"
           style={{
             height: activeIndex !== null
-              ? `${((activeIndex + 1) / timelineData.length) * 70}%` // 100
+              ? `${((activeIndex + 1) / timelineData.length) * 100}%` // 100
               : '0%',
           }}
         ></div>
@@ -86,36 +86,24 @@ const Timeline = () => {
           <li
             key={index}
             ref={(el) => (elementsRef.current[index] = el)}
-            className={`mb-10 ms-6 flex justify-between items-center w-full ${
+            className={` mb-10 ms-6 flex justify-between items-center w-full ${
               index % 2 === 0 ? 'flex-row-reverse' : 'flex-row'
             }`}
           >
             <div className="order-1 w-5/12"></div>
-            <div className="order-1 w-5/12 px-4 py-2 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-              {/* <span
-                className={`absolute flex items-center justify-center w-6 h-6 rounded-full -start-3 ring-8 ring-white dark:ring-gray-900 ${
-                  activeIndex >= index ? 'bg-green-500' : 'bg-blue-100 dark:bg-blue-900'
-                }`}
-
-              > 
-              
-              className={`w-2.5 h-2.5 ${
-                    activeIndex >= index ? 'text-white' : 'text-blue-800 dark:text-blue-300'
-                  }`}
-              */}
-               
-                <IoIosCheckmarkCircleOutline className={`absolute flex items-center justify-center  rounded-full start-[49%]   dark:ring-gray-900 ${
+            <IoIosCheckmarkCircleOutline className={`absolute flex items-center justify-center  rounded-full start-[49%]   dark:ring-gray-900 ${
                   activeIndex >= index ? 'bg-green-500' : 'bg-blue-100 dark:bg-blue-900'
                 }`} />
                 {/* w-6 h-6 -start-3 */}
-            
+
+
+            <div className={`order-1 w-5/12 px-4 py-2  border bg-white border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 ${
+              index % 2 === 0 ? ' ml-[24%]' : ' mr-[30%]'
+            }`}>
+              
               <h3 className="mb-1 text-lg font-semibold text-gray-900 dark:text-white">
                 {item.title}
-                {item.latest && (
-                  <span className="bg-blue-100 text-blue-800 text-sm font-medium ms-2 px-2.5 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300">
-                    Latest
-                  </span>
-                )}
+                
               </h3>
               <time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
                 {item.date}
@@ -134,3 +122,15 @@ const Timeline = () => {
 };
 
 export default Timeline;
+{/* <span
+                className={`absolute flex items-center justify-center w-6 h-6 rounded-full -start-3 ring-8 ring-white dark:ring-gray-900 ${
+                  activeIndex >= index ? 'bg-green-500' : 'bg-blue-100 dark:bg-blue-900'
+                }`}
+
+              > 
+              
+              className={`w-2.5 h-2.5 ${
+                    activeIndex >= index ? 'text-white' : 'text-blue-800 dark:text-blue-300'
+                  }`}
+              */}
+               
