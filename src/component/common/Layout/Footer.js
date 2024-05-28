@@ -13,7 +13,8 @@ import { FaLinkedinIn } from "react-icons/fa6";
 function Footer() {
     return (
         <>
-            <div className="flex justify-center px-[10%] gap-9 bg-white p-5">
+            <div className="flex  px-[2%] py-[3%] mt-28 gap-[90px] bg-white p-5">
+            {/* justify-center */}
                 <div className="w-[30%]">
                     {/* icon and description */}
                     <Image
@@ -46,36 +47,36 @@ function Footer() {
                     <Link href="/">Tourist hub</Link>
                     <Link href="/">Services</Link>
                 </div>
-                <div className="w-[20%]">
+                <div className="w-[20%] flex flex-col gap-8 ">
                     {/* phone no. and contacts and email */}
-                    <div className="flex">
-                        <FaPhone />
-                        <h1>01434794837</h1>
+                    <div className="flex relative">
+                        <FaPhone className=" text-purple-600"/>
+                        <h1 className="absolute top-[-5px] left-[9%]">01434794837</h1>
                     </div>
 
-                    <div className="flex">
-                        <MdPlace />
-                        <h1>
+                    <div className="flex relative">
+                        <MdPlace className=" text-purple-600"/>
+                        <h1  className="absolute top-[-5px] left-[9%]">
                             House 983, Road 16, Avenue 2, Mirpur DOHS, Dhaka
                             1216, Bangladesh
                         </h1>
                     </div>
-                    <div className="flex">
-                        <IoMdMail />
-                        <h1>bmabroadreamers@gmail.com</h1>
+                    <div className="flex relative mt-6">
+                        <IoMdMail className=" text-purple-600"/>
+                        <h1 className="absolute top-[-5px] left-[9%]">bmabroadreamers@gmail.com</h1>
                     </div>
                 </div>
-                <div>
+                <div className="mt-20">
                     {/* social media links  */}
                     <h1>Social Media</h1>
-                    <div className="flex">
-                        <FaFacebookSquare />
+                    <div className="flex mt-5 gap-5  ">
+                        <FaFacebookSquare className="text-purple-600"/>
 
-                        <FaInstagram />
+                        <FaInstagram className=" text-purple-600"/>
+                        {/* text-4xl opacity-50 */}
+                        <FaLinkedinIn className=" text-purple-600"/>
 
-                        <FaLinkedinIn />
-
-                        <FaYoutube />
+                        <FaYoutube className=" text-purple-600"/>
                     </div>
                 </div>
             </div>

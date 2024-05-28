@@ -27,7 +27,7 @@ function Navbar() {
                 <nav className="bg-white bg-opacity-95 rounded-lg dark:bg-gray-900 fixed w-[90%] z-20  border-none ">
                     <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
                         <a
-                            href="https://flowbite.com/"
+                            href="/"
                             className="flex items-center space-x-3 rtl:space-x-reverse"
                         >
                             <Image
