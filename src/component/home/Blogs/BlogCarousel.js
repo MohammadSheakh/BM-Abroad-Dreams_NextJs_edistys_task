@@ -45,7 +45,7 @@ function BlogCarousel() {
                 {/* //🔴 */}
                 {/* w-screen */}
 
-                <div className="overflow-hidden  flex border-none bg-white rounded-xl">
+                <div className="overflow-hidden  flex border-none  rounded-xl">
                     {/* max-w-lg */}{" "}
                     <div className="embla__viewport" ref={emblaRef}>
                         {" "}

@@ -100,22 +100,21 @@ export default function Home() {
                 <StartYourJourney />
                 {/* ------------------------------------- Success Section --------------- End ----  */}
                 {/* ------------------------------------- Blog Section --------------- Start ----  */}
-                <div className=" ">
-                    {/* flex justify-center mt-0  */}
-                    <div className="flex gap-5  mt-10">
-                        {/* mx-28 */}
-                        <div>
-                            <TitleComponent
-                                title="BLOGS"
-                                shortDescription="Explore our latest blogs and articles"
-                            />
 
-                            <div className="w-[90%] h-[406px] flex justify-center">
-                                <BlogCarousel />
-                            </div>
+                <div className="w-[100%] ">
+                    {/* mx-28  flex mt-10 gap-5  */}
+                    <div>
+                        <TitleComponent
+                            title="BLOGS"
+                            shortDescription="Explore our latest blogs and articles"
+                        />
+
+                        <div className="w-[90%] h-[406px] flex justify-center">
+                            <BlogCarousel />
                         </div>
                     </div>
                 </div>
+
                 {/* ------------------------------------- Blog Section --------------- End ----  */}
             </div>
         </>
