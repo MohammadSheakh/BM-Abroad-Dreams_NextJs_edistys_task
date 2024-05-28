@@ -8,7 +8,8 @@ function TitleComponent({ title, shortDescription }) {
     // console.log("title :: ", title);
     // console.log("shortDescription :: ", shortDescription);
     return (
-        <div className="mx-28 flex">
+        <div className=" flex">
+            {/* mx-28  */}
             <div className="border-blue-900 border-4"></div>
             <div className="ml-4">
                 <h1 className=" text-5xl font-bold">{title}</h1>

@@ -12,6 +12,8 @@ import TestimonialCarousel from "@/component/home/Testimonials/TestimonialCarous
 import StartYourJourney from "@/component/home/StartYourJourney";
 import TitleComponent from "@/component/common/title/TitleComponent";
 
+import BlogCarousel from "@/component/home/Blogs/BlogCarousel";
+
 // import { Alert } from "flowbite-react"; //
 
 const inter = Inter({ subsets: ["latin"] });
@@ -21,8 +23,9 @@ export default function Home() {
         <>
             {/* #F4F8FF */}
             {/* container       flex-1 */}
-            <div className=" container justify-center bg-slate-800 h-full w-full bg-mainBackgroundColor">
-                <div className="mt-20">
+            <div className=" w-full container justify-center bg-slate-800 h-full  bg-mainBackgroundColor">
+                {/* w-screen   mx-2 my-2 border-black border-2*/}
+                <div className="mt-20 w-[90%] flex justify-center">
                     <Banner />
                 </div>
                 <div>
@@ -51,18 +54,18 @@ export default function Home() {
                 {/* <VideoPlayer /> 🔴*/}
                 {/* ----------------------------Video section ---------------------End------ */}
                 {/* ------------------------------- Top Destination Cards section -------- start ---  */}
-                <div className="flex  mt-0 ">
-                    {/* mx-28  */}
-                    <div className="flex  gap-5  mt-10">
+                <div className="flex  ">
+                    {/* mx-28  justify-center*/}
+                    <div className="flex  ">
                         {/* mx-28 */}
-                        <div className="w-[900px]">
+                        <div className="w-[100%]">
                             {/* [900px] */}
                             <TitleComponent
                                 title="TOP DESTINATION"
                                 shortDescription="Study in your Dream Destination"
                             />
 
-                            <div>
+                            <div className=" flex">
                                 {" "}
                                 <TopDestinationCards />{" "}
                             </div>
@@ -71,20 +74,21 @@ export default function Home() {
                 </div>
                 {/* ----------------------------------- Top Destination Cards section --------- End ---- */}
                 {/* ----------------------------------- Testimonials section --------- Start ---- */}
-                <div className="flex  mt-0 ">
-                    {/* mx-28  */}
+                <div className=" ">
+                    {/* flex  justify-center mt-0  */}
                     <div className="flex gap-5  mt-10">
                         {/* mx-28 */}
-                        <div className="w-[900px] ">
+                        <div className="w-[100%] ">
                             {/* [900px] */}
-
-                            <TitleComponent
-                                title="TESTIMONIAL"
-                                shortDescription="Our students shared their visa success
+                            <div className="">
+                                <TitleComponent
+                                    title="TESTIMONIAL"
+                                    shortDescription="Our students shared their visa success
                                 stories"
-                            />
+                                />
+                            </div>
 
-                            <div>
+                            <div className="flex justify-center">
                                 {" "}
                                 <TestimonialCarousel />{" "}
                             </div>
@@ -96,21 +100,18 @@ export default function Home() {
                 <StartYourJourney />
                 {/* ------------------------------------- Success Section --------------- End ----  */}
                 {/* ------------------------------------- Blog Section --------------- Start ----  */}
-                <div className="flex  mt-0 ">
-                    {/* mx-28  */}
+                <div className=" ">
+                    {/* flex justify-center mt-0  */}
                     <div className="flex gap-5  mt-10">
                         {/* mx-28 */}
-                        <div className="w-[900px] ">
-                            {/* [900px] */}
-
+                        <div>
                             <TitleComponent
                                 title="BLOGS"
                                 shortDescription="Explore our latest blogs and articles"
                             />
 
-                            <div>
-                                {" "}
-                                <TestimonialCarousel />{" "}
+                            <div className="w-[90%] h-[406px] flex justify-center">
+                                <BlogCarousel />
                             </div>
                         </div>
                     </div>

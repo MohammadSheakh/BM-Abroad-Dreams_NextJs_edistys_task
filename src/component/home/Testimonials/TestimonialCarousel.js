@@ -33,7 +33,7 @@ function TestimonialCarousel() {
     ];
     return (
         <>
-            <div className="flex justify-center">
+            <div className="flex justify-center mt-10">
                 <button className="embla__prev" onClick={scrollPrev}>
                     {/* Prev */}
                     <CiCircleChevLeft className="text-4xl opacity-50 text-gray-500" />

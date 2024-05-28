@@ -5,8 +5,8 @@ function TestimonialCard({ testimonialData }) {
     return (
         <>
             <div className="embla__slide">
-                <div className="w-[900px] h-[500px]  flex">
-                    {/* bg-red-100 border-4*/}
+                <div className="w-[500px] h-[500px]  flex">
+                    {/* w-[500px] <- this can not be changed */}
 
                     {/* for image */}
                     {/* <Image

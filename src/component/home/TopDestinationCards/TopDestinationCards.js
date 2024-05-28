@@ -31,7 +31,7 @@ function TopDestinationCards() {
     ];
     return (
         <>
-            <div className="flex flex-wrap  gap-5 justify-center mt-10 w-screen">
+            <div className="flex w-[100%]  flex-wrap  gap-5 justify-center mt-10 ">
                 {/* //🔴 */}
                 {/* w-screen */}
                 {destinationData.map((destination, index) => (
