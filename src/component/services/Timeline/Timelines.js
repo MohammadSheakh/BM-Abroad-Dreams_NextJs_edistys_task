@@ -3,37 +3,55 @@ import { IoIosCheckmarkCircleOutline } from 'react-icons/io';
 
 const timelineData = [
   {
-    title: 'Flowbite Application UI v2.0.0',
-    date: 'Released on January 13th, 2022',
-    description: 'Get access to over 20+ pages including a dashboard layout, charts, kanban board, calendar, and pre-order E-commerce & Marketing pages.',
-    latest: true,
-    link: '#',
+    step: 'Step 1 :',
+    title: 'Initial Consultation and Assessment',
+    description: 'We start by getting to know you – your dreams, aspirations, and academic background. Through in-depth consultations, we understand your unique goals.',
   },
   {
-    title: 'Flowbite Figma v1.3.0',
-    date: 'Released on December 7th, 2021',
-    description: 'All of the pages and components are first designed in Figma and we keep a parity between the two versions even as we update the project.',
+    step: 'Step 2 :',
+    title: 'Personalized Study Plan',
+    description: 'Based on your aspirations, we craft a personalized study plan that outlines recommended destinations, universities, and programs that align with your ambitions.',
   },
   {
-    title: 'Flowbite Library v1.2.2',
-    date: 'Released on December 2nd, 2021',
-    description: 'Get started with dozens of web components and interactive elements built on top of Tailwind CSS.',
+    step: 'Step 3 :',
+    title: 'University Selection and Application',
+    description: 'We assist you in choosing the right universities and guide you through the entire application process. From gathering documents to submitting applications, we ensure youre on the right track.',
   },
   {
-    title: 'New Feature Release v1.1.0',
-    date: 'Released on November 15th, 2021',
-    description: 'Introducing new features including improved accessibility and better performance.',
+    step: 'Step 4 :',
+    title: 'Test Preparation and Support',
+    description: 'Our test prep resources, study materials, and practice tests help you excel in required standardized exams, ensuring youre well-prepared for admission.',
   },
   {
-    title: 'Bug Fixes v1.0.5',
-    date: 'Released on October 30th, 2021',
-    description: 'Various bug fixes and minor improvements.',
+    step: 'Step 5 :',
+    title: 'Application Submission and Review',
+    description: 'We help you submit polished applications, ensuring all necessary materials are included. Our team reviews your essays and personal statements, offering valuable feedback.',
   },
   {
-    title: 'Initial Release v1.0.0',
-    date: 'Released on October 1st, 2021',
-    description: 'The initial release of our application, packed with features to get you started.',
+    step: 'Step 6 :',
+    title: 'Visa Guidance and Pre-Departure Assistance',
+    description: 'Based on your aspirations, we craft a personalized study plan that outlines recommended destinations, universities, and programs that align with your ambitions.',
   },
+  {
+    step: 'Step 7 :',
+    title: 'Arrival and Adaptation',
+    description: 'As you embark on your study abroad journey, were here to help you transition smoothly. We assist with initial challenges, ensuring a confident start to your new academic adventure.',
+  },
+  {
+    step: 'Step 8 :',
+    title: 'Ongoing Support and Networking',
+    description: 'Throughout your studies, we remain a constant source of support. Our team assists with academic and personal concerns, and we connect you with other students and alumni for networking opportunities.',
+  },
+  {
+    step: 'Step 9 :',
+    title: 'Transition and Future Opportunities',
+    description: 'When your studies conclude, our guidance doesnt end. We help you transition back to your home country or explore further academic and career opportunities.',
+  },
+  {
+    step: 'Step 10 :',
+    title: 'Success Stories',
+    description: 'Dont just take our word for it – hear from students whove successfully achieved their study abroad dreams with [Agency Name]. Read their inspiring stories of growth, learning, and success.',
+  }
 ];
 
 const Timeline = () => {
@@ -70,7 +88,8 @@ const Timeline = () => {
   }, []);
 
   return (
-    <div className="relative mt-[900px] flex flex-col items-center">
+    <div className="relative  flex flex-col items-center">
+      {/* mt-[900px] */}
       <div className="absolute w-1 bg-gray-200 dark:bg-gray-700 h-full left-1/2 transform -translate-x-1/2">
         <div
           className="bg-blue-500 h-full transition-all duration-300"
@@ -96,21 +115,26 @@ const Timeline = () => {
                 }`} />
                 {/* w-6 h-6 -start-3 */}
 
-
-            <div className={`order-1 w-5/12 px-4 py-2  border bg-white border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 ${
-              index % 2 === 0 ? ' ml-[24%]' : ' mr-[30%]'
+                {/* border bg-white border-gray-200 shadow*/}
+            <div className={`order-1 w-5/12 px-4 py-2  rounded-lg  dark:bg-gray-800 dark:border-gray-700 ${
+              index % 2 === 0 ? ' ml-[24%] ' : ' mr-[30%] text-right'
+            } ${
+              activeIndex >= index ? 'opacity-90' : 'opacity-30'
             }`}>
-              
+              <time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
+                {item.step}
+              </time>
               <h3 className="mb-1 text-lg font-semibold text-gray-900 dark:text-white">
                 {item.title}
                 
               </h3>
-              <time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
-                {item.date}
-              </time>
-              <p className="text-base font-normal text-gray-500 dark:text-gray-400">
+              
+              
+              <h1 className="text-xs font-bold text-gray-500 dark:text-gray-400">
                 {item.description}
-              </p>
+              </h1>
+              
+              
               
             </div>
             <div className="order-1 w-5/12"></div>
