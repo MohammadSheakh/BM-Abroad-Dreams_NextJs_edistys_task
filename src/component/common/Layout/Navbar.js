@@ -1,6 +1,7 @@
 // rfce
 import Image from "next/image";
 import React, { useEffect, useState } from "react";
+import Link from 'next/link';
 
 function Navbar() {
     const [isSticky, setIsSticky] = useState(false);
@@ -26,10 +27,8 @@ function Navbar() {
                 {/* flex justify-center */}
                 <nav className="bg-white bg-opacity-95 rounded-lg dark:bg-gray-900 fixed w-[90%] z-20  border-none ">
                     <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-                        <a
-                            href="/"
-                            className="flex items-center space-x-3 rtl:space-x-reverse"
-                        >
+                        
+                            <Link href="/"  className="flex items-center space-x-3 rtl:space-x-reverse">
                             <Image
                                 src="https://cdn.sanity.io/images/s37229yn/production/576084e1b9545990e38bc6ccee63646f2b0b0742-756x276.png?w=320&auto=format"
                                 width={150}
@@ -37,7 +36,7 @@ function Navbar() {
                                 className="h-8"
                                 alt="Flowbite Logo"
                             />
-                        </a>
+                        </Link>
                         <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
                             <button
                                 type="button"
@@ -86,12 +85,10 @@ function Navbar() {
                                     </a>
                                 </li>
                                 <li>
-                                    <a
-                                        href="/services"
-                                        className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                                <Link href="/services"  className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
                                     >
                                         SERVICES
-                                    </a>
+                                    </Link>
                                 </li>
                                 <li>
                                     <a
