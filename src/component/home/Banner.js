@@ -15,7 +15,8 @@ import Image from "next/image";
 function Banner() {
     return (
         <Swiper
-            className="mySwiper h-[620px] w-full mx-auto"
+            className="mySwiper h-auto  w-full mx-auto"
+            // md:h-[620px]
             spaceBetween={30}
             centeredSlides={true}
             autoplay={{

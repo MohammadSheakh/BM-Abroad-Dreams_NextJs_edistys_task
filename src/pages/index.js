@@ -42,14 +42,11 @@ export default function Home() {
                         alt="Flowbite Logo"
                     />
                 </div>
-                {/* ----------------------------about us section ---------------------start------ */}
+                
                 <AboutUs />
-                {/* ----------------------------about us section ---------------------End------ */}
-                {/* ----------------------------Task Cards section ---------------------start------ */}
+                
+                     <TaskCards />
 
-                <TaskCards />
-
-                {/* ----------------------------Task Cards section ---------------------End------ */}
                 {/* ----------------------------Video section ---------------------start------ */}
                 {/* <VideoPlayer /> 🔴*/}
                 {/* ----------------------------Video section ---------------------End------ */}
@@ -100,7 +97,6 @@ export default function Home() {
                 <StartYourJourney />
                 {/* ------------------------------------- Success Section --------------- End ----  */}
                 {/* ------------------------------------- Blog Section --------------- Start ----  */}
-
                 <div className="w-[100%] ">
                     {/* mx-28  flex mt-10 gap-5  */}
                     <div>

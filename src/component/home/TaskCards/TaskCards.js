@@ -59,11 +59,11 @@ function TaskCards() {
             <div className="flex flex-wrap  gap-5 justify-center mt-10 w-full">
                 {/* w-screen */}
 
-                {/* {taskData.map((task, index) => (
+                {taskData.map((task, index) => (
                     <>
                         <TaskCard key={index} task={task} />
                     </>
-                ))} */}
+                ))}
             </div>
         </>
     );
